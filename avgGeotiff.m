@@ -15,9 +15,11 @@ end
 tiffDifference = zeros(448,304,3);
 
 %test loop
+%{
 for i = 1:448
     image1(i,:,:) = 2;
 end
+%}
 
 %average the red values
 for i = 1:448
