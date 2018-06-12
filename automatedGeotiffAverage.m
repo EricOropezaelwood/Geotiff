@@ -11,12 +11,14 @@ numFiles = length(geotiffFiles);
 
 imgSum = 0;
 mapSum = 0;
+
 %loop through all files and sum 'img' and 'map' values
 for k = 1 : numFiles
   [img,map] = imread(geotiffFiles(k).name,1);
   imgSum = imgSum + img;
   mapSum = mapSum + map;
 end
+
 %average the 'img' and 'map' values form imread
 avgImg = imgSum/numFiles;
 avgMap = mapSum/numFiles;
