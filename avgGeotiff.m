@@ -34,5 +34,7 @@ for i = 1:3
     tiffDifference(:,:,i) = (image1(:,:,i)+image2(:,:,i)+image3(:,:,i))/3;
 end
 
+newMap = (map1+map2+map3)/3;
+
 %display new averaged image
 imshow(tiffDifference,map1)
